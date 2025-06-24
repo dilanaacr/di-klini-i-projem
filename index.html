@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>MUDİL DİŞ KLİNİĞİ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+
+<body>
+
+  <!-- SOSYAL MEDYA SABİT ÜSTTE -->
+<div class="sosyal-ust-icons position-absolute top-0 end-0 p-3 d-none d-md-block">
+  <a href="https://instagram.com/seninhesabin" target="_blank" class="social-top-icon" aria-label="Instagram">
+    <i class="bi bi-instagram"></i>
+  </a>
+  <a href="https://facebook.com/seninhesabin" target="_blank" class="social-top-icon" aria-label="Facebook">
+    <i class="bi bi-facebook"></i>
+  </a>
+  <a href="https://wa.me/90XXXXXXXXXX" target="_blank" class="social-top-icon" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
+
+<!-- HEADER -->
+<header class="d-flex align-items-center justify-content-center px-4 py-3 flex-column flex-md-row header-section">
+  <img src="img/logo.png" alt="Mudil Diş Kliniği Logo" class="logo me-3 mb-3 mb-md-0">
+  <div class="text-center text-md-start">
+    <h1 class="header-title mb-0">MUDİL DİŞ KLİNİĞİ</h1>
+    <p class="slogan mb-0">Sağlıklı gülüşler için buradayız</p>
+  </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('anasayfa')"><i class="bi bi-house-door-fill"></i> ANASAYFA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('hakkimizda')"><i class="bi bi-info-circle-fill"></i> HAKKIMIZDA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('tedaviler')"><i class="bi bi-heart-pulse-fill"></i> TEDAVİLERİMİZ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('doktorlar')"><i class="bi bi-person-badge-fill"></i> DOKTORLARIMIZ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('sss')"><i class="bi bi-question-circle-fill"></i> SSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" onclick="gosterBolum('iletisim')"><i class="bi bi-envelope-fill"></i> İLETİŞİM</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO BANNER -->
+<section id="anasayfa" class="icerik active">
+  <div class="hero-banner">
+    <div class="overlay">
+      <div class="hero-text">
+        <h1>Mutlu Bir Gülüş İçin İhtiyacınız Olan Her Şey</h1>
+        <p>Mudil Ağız & Diş Sağlığı Kliniği</p>
+          <a href="#" class="btn btn-primary mt-3" onclick="gosterBolum('iletisim')">
+            <i class="bi bi-calendar-check-fill"></i> Randevu Al
+          </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- HAKKIMIZDA -->
+<section id="hakkimizda" class="icerik py-5">
+  <div class="container">
+
+    <!-- Üst Başlık -->
+    <div class="text-center mb-5">
+      <h2 class="hakkimizda-title">HAKKIMIZDA</h2>
+      <p class="lead">Mudil Diş Kliniği olarak sizlere en iyi hizmeti sunmak için çalışıyoruz.</p>
+    </div>
+
+    <div class="row">
+
+      <!-- Vizyon -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center p-3">
+          <i class="bi bi-eye-fill display-4 text-muted mb-3"></i>
+          <h5 class="card-title">Vizyonumuz</h5>
+          <p class="card-text">Diş sağlığı alanında en güvenilir ve tercih edilen klinik olmak.</p>
+        </div>
+      </div>
+
+      <!-- Misyon -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center p-3">
+          <i class="bi bi-bullseye display-4 text-muted mb-3"></i>
+          <h5 class="card-title">Misyonumuz</h5>
+          <p class="card-text">Her hastamıza özel, etik ve kaliteli diş tedavisi hizmeti sunmak.</p>
+        </div>
+      </div>
+
+      <!-- Değerler -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center p-3">
+          <i class="bi bi-heart-fill display-4 text-muted mb-3"></i>
+          <h5 class="card-title">Değerlerimiz</h5>
+          <p class="card-text">Dürüstlük, güven, hijyen, hasta memnuniyeti ve etik ilkeler.</p>
+        </div>
+      </div>
+
+      <!-- Hedef -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center p-3">
+          <i class="bi bi-star-fill display-4 text-muted mb-3"></i>
+          <h5 class="card-title">Hedefimiz</h5>
+          <p class="card-text">Teknolojik yenilikleri takip ederek sürekli gelişim sağlamak.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TEDAVİLERİMİZ -->
+<section id="tedaviler" class="icerik py-5">
+  <div class="tedaviler-banner">
+    <div class="overlay">
+      <h2 class="text-uppercase">Tedavilerimiz</h2>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+
+      <!-- Diş Beyazlatma -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/dişbeyazlatma.png" alt="Diş Beyazlatma" class="service-icon">
+          </div>
+          <h4>Diş Beyazlatma</h4>
+          <p>Dişlerin üzerine beyazlatıcı jel uygulanarak diş renginin birkaç ton açılması sağlanır.</p>
+        </div>
+      </div>
+
+      <!-- Pedodonti -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/pedodonti.png" alt="Pedodonti" class="service-icon">
+          </div>
+          <h4>Pedodonti</h4>
+          <p>0-12 yaş grubu çocukların diş gelişimi ve koruyucu tedavileri uygulanır.</p>
+        </div>
+      </div>
+
+      <!-- Zirkonyum Kaplama -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/zirconium.png" alt="Zirkonyum Kaplama" class="service-icon">
+          </div>
+          <h4>Zirkonyum Kaplama</h4>
+          <p>Doğal diş görünümüne en yakın estetik ve sağlam kaplama yöntemidir.</p>
+        </div>
+      </div>
+
+      <!-- İmplant -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/implant.png" alt="İmplant" class="service-icon">
+          </div>
+          <h4>İmplant</h4>
+          <p>Eksik dişlerin yerine vida şeklinde yerleştirilen yapay kök sistemidir.</p>
+        </div>
+      </div>
+
+      <!-- Kanal Tedavisi -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/kanaltedavisi.png" alt="Kanal Tedavisi" class="service-icon">
+          </div>
+          <h4>Kanal Tedavisi</h4>
+          <p>Dişin pulpa tabakasındaki iltihap temizlenerek dişin kurtarılması sağlanır.</p>
+        </div>
+      </div>
+
+      <!-- Ortodonti -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box p-4 shadow-sm rounded">
+          <div class="icon mb-3">
+            <img src="img/ortodonti.png" alt="Ortodonti" class="service-icon">
+          </div>
+          <h4>Ortodonti</h4>
+          <p>Çapraşık dişler ve çene bozuklukları tel ve şeffaf plaklarla düzeltilir.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOKTORLARIMIZ -->
+<section id="doktorlar" class="icerik">
+  <div class="doktorlar-banner d-flex justify-content-center align-items-center">
+    <h2 class="text-white">DOKTORLARIMIZ</h2>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+
+      <!-- 1. Doktor -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/doktor1.jpg" class="card-img-top" alt="Dr. Ayşe Yılmaz">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dr. Ayşe Yılmaz</h5>
+            <p class="card-text">Ortodonti Uzmanı</p>
+            <p class="card-text text-muted">Çapraşık diş ve çene bozukluklarının tedavisinde uzmandır.</p>
+            <p class="card-text"><i class="bi bi-telephone"></i> Dahili: 101</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Doktor -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/doktor2.jpg" class="card-img-top" alt="Dr. Mesut Acar">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dr. Mesut Acar</h5>
+            <p class="card-text">İmplant Uzmanı</p>
+            <p class="card-text text-muted">Eksik dişlerin yerine implant uygulamalarında deneyimlidir.</p>
+            <p class="card-text"><i class="bi bi-telephone"></i> Dahili: 102</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Doktor -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/doktor3.jpg" class="card-img-top" alt="Dr. Benazir Yıldırım">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dr. Benazir Yıldırım</h5>
+            <p class="card-text">Pedodonti Uzmanı</p>
+            <p class="card-text text-muted">Çocuk diş sağlığı ve koruyucu diş hekimliği üzerine çalışır.</p>
+            <p class="card-text"><i class="bi bi-telephone"></i> Dahili: 103</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SSS -->
+<section id="sss" class="icerik py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-uppercase">Sıkça Sorulan Sorular</h2>
+
+    <div class="accordion" id="sssAccordion">
+
+      <!-- 1. Soru -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Süt Dişleri Gerçekten Önemli Midir?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#sssAccordion">
+          <div class="accordion-body">
+            Evet. Süt dişleri çocukların çene gelişimi ve daimi dişlerin doğru yerleşimi açısından çok önemlidir.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Soru -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Diş Macunu Kaç Yaşından İtibaren Kullanılmalıdır?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+          <div class="accordion-body">
+            Genellikle 3 yaşından itibaren bezelye tanesi kadar macun önerilmektedir.
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Soru -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Çocuklarda Diş Hekimi Korkusu Nasıl Yenilir?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+          <div class="accordion-body">
+            Pedodontistler oyunla ve özel tekniklerle çocukların hekim korkularını yenmesine yardımcı olur.
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Soru -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Çocuk Ortodonti Tedavisi Kaç Yaşında Başlamalı?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+          <div class="accordion-body">
+            İlk ortodontik değerlendirme 7 yaş civarında yapılmalıdır.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Soru -->
+      <div class="accordion-item mb-3">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Ortodonti Tedavi Süresi Nedir?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#sssAccordion">
+          <div class="accordion-body">
+            Tedavi süresi genellikle 12-24 ay arasında değişmektedir.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="iletisim" class="icerik">
+
+  <!-- Üst kısım: Başlık -->
+  <div class="iletisim-banner">
+    <div class="overlay">
+      <h2>İLETİŞİM</h2>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <!-- İletişim Bilgileri -->
+     <h3 class="mb-4 text-secondary baslik-underline">İletişim Bilgileri</h3>
+     <div class="row">
+      
+      <div class="col-md-6 mb-4">
+        <h4 class="text-primary">Diyarbakır / Ergani</h4>
+        <p>Sanayi Mah. Atatürk Cad. No:23/A Ergani / Diyarbakır</p>
+        <p><strong>Telefon:</strong> +90 (412) 123 45 67</p>
+        <p><strong>Whatsapp:</strong> +90 (532) 765 43 21</p>
+      </div>
+
+      <div class="col-md-6">
+        <h4 class="text-primary">Mudil Diş Hesap Bilgileri</h4>
+        <p>Mudil Diş Laboratuvarı Diş Sağlığı Hiz. Ltd. Şti</p>
+        <p>Garanti Bankası TL Hesabı</p>
+        <p>Şube Kodu: 759</p>
+        <p>Hesap No: 6299777</p>
+        <p>IBAN: TR17 0006 2000 7590 0006 2997 77</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Randevu Formu -->
+    <h3 class="mb-4 text-secondary">Randevu Formu</h3>
+    <form autocomplete="off">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Ad Soyad" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="tel" class="form-control" placeholder="Telefon" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="E-posta" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="date" class="form-control" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off" required>
+        </div>
+        <div class="col-md-12 mb-3">
+          <textarea class="form-control" rows="4" placeholder="Notunuz" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="off"></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary px-5 py-2">Randevu Al</button>
+        </div>
+      </div>
+    </form>
+    <div id="randevuMesaj" class="alert alert-success alert-dismissible fade show d-none mt-4" role="alert">
+  <strong>Randevunuz başarıyla alındı!</strong> En kısa sürede sizinle iletişime geçeceğiz.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Kapat"></button>
+</div>
+
+
+    <hr class="my-5">
+
+    <!-- HARİTA -->
+    <h3 class="mb-4 text-secondary">Konum</h3>
+    <div class="ratio ratio-16x9 rounded shadow">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49324.16936571144!2d40.7572497!3d38.2680157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4074f90dbb5f87e9%3A0x637efefb2ed64546!2zRGnFn2FyYmFrxLFyIEVyZ2FuaQ!5e0!3m2!1str!2str!4v1717267533972" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>&copy; 2025 Mudil Diş Kliniği | Tüm Hakları Saklıdır.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Sayfa yüklendiğinde tüm bölümleri görünür yap
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.icerik').forEach(b => b.classList.add('active'));
+  });
+
+  // Navigasyon tıklamasıyla sadece tıklanan bölümü göster
+  function gosterBolum(id) {
+    document.querySelectorAll('.icerik').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const mesaj = document.getElementById("randevuMesaj");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      mesaj.classList.remove("d-none");
+      mesaj.scrollIntoView({ behavior: "smooth" });
+
+      setTimeout(() => {
+        const alert = bootstrap.Alert.getOrCreateInstance(mesaj);
+        alert.close();
+      }, 5000);
+    });
+  });
+</script>
+
+
+</body>
+</html>

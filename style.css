@@ -1,0 +1,492 @@
+/* Temel ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #eefdfa;
+
+}
+
+/* Header */
+.header-section {
+  background-color: #eefdfa;
+  color: #004466;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header-section h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.header-title {
+  
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: #002466;
+}
+
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+.slogan {
+  font-size: 16px;
+  font-weight: 400;
+  color: #177f8d;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+
+/* NAVBAR */
+.nav-link {
+  text-transform: uppercase;
+  color: #002466 !important;
+  background-color: #dcecfb;
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  background-color: #bcdaf6;
+  color: #002466 !important;
+  transform: scale(1.08);
+}
+
+/* Bölüm geçişleri */
+.icerik {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.icerik.active {
+  display: block;
+  opacity: 1;
+}
+
+/* HERO BANNER (Ana sayfa görsel) */
+.hero-banner {
+  background: url('img/klinik.jpg') no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.hero-banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #ffffff;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.hero-text a.btn-primary {
+  background-color: #0077cc;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hero-text a.btn-primary:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* HAKKIMIZDA BÖLÜMÜ */
+
+/* Üst Banner Başlığı */
+.hakkimizda-banner {
+  background: url('img/hakkimizzdaArkaplan.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hakkimizda-banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hakkimizda-banner h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+/* Alt içerik arka planı */
+.hakkimizda-arkaplan {
+  background: url('img/hakkimizzdaArkaplan.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 60px 0;
+  position: relative;
+}
+
+.hakkimizda-arkaplan::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hakkimizda-icerik {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+#hakkimizda h3 {
+  color: #0077cc;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#hakkimizda p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+#hakkimizda ul {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+#hakkimizda ul li {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.larger-image {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  margin-left: 30px;
+}
+
+/* Kart Tasarım (Sade ve Yumuşak Etkili) */
+.hakkimizda-icerik .hakkimizda-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #004466;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hakkimizda-icerik .lead {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.hakkimizda-icerik .card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fdfdfd;
+}
+
+.hakkimizda-icerik .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.hakkimizda-icerik .card-title {
+  font-weight: 600;
+  color: #004466;
+  margin-bottom: 15px;
+}
+
+.hakkimizda-icerik .card-text {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* İKONLARA ZARİF GEÇİŞ */
+.hakkimizda-icerik i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #6c757d;
+}
+
+.hakkimizda-icerik .card:hover i {
+  transform: scale(1.1);
+  color: #495057;
+}
+
+
+
+
+
+/* TEDAVİLER */
+.tedaviler-banner {
+  background: url('img/tedavi2.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.tedaviler-banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tedaviler-banner h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.service-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #ffffff;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover .service-icon {
+  transform: scale(1.1);
+}
+
+/* DOKTORLAR */
+.doktorlar-banner {
+  background: url('img/doktorlar2.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.doktorlar-banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doktorlar-banner h2 {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+  z-index: 2;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* İLETİŞİM */
+.iletisim-banner {
+  background: url('img/iletişimm.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iletisim-banner .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.iletisim-banner h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  z-index: 2;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+.baslik-underline {
+ position: relative;
+ display: inline-block;
+ padding-bottom: 10px;
+}
+.baslik-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;   /* soldan başlasın */
+  width: 60px;
+  height: 3px;
+  background-color: #4e748f;
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+
+/* SSS */
+.accordion-button {
+  background-color: #f8f9fa;
+  color: #004466;
+  font-weight: 600;
+  border-radius: 10px !important;
+  padding: 15px 20px;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e0f0fa;
+  color: #0077cc;
+  transform: scale(1.02);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #0077cc;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.accordion-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+/* ÜSTTE SABİT SOSYAL MEDYA İKONLARI */
+.sosyal-ust-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.social-top-icon {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  color: #666;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover efekti: 3 animasyon bir arada */
+.social-top-icon:hover {
+  animation: sosyalHopla 0.6s ease forwards;
+  color: #0077cc;
+}
+
+/* ANİMASYON TANIMI */
+@keyframes sosyalHopla {
+  0% {
+    transform: scale(1) rotate(0deg);
+    color: #666;
+  }
+  50% {
+    transform: scale(1.4) rotate(15deg);
+    color: #52cc00;
+  }
+  100% {
+    transform: scale(1.2) rotate(-5deg);
+    color: #0077cc;
+  }
+}
